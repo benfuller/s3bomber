@@ -1,0 +1,34 @@
+; This is our sample config file
+; Comments start with ';', as in php.ini
+;          ,__\!/
+;       __/   -*-
+;     ,8008.  /!\
+;     SBENF3
+;     `BOMB'
+
+[mysql]
+server = "localhost"
+user = "s3bomber"
+pass = "s3b0mb3r"
+db = "photos"
+table = "delete_photos"
+name_column = "object"
+
+[mysql-read]
+server = "localhost2"
+user = "readonlybomber"
+pass = "s3b0mb3r"
+db = "photos"
+table = "delete_photos"
+name_column = "object"
+
+[aws]
+key = "YOURKEYHERE"
+pass = "YOURAWSSECRETHERE"
+s3bucket = "YOURBUCKETHERE"
+
+;          ,__\!/
+;       __/   -*-
+;     ,8008.  /!\
+;     SBENF3
+;     `BOMB'

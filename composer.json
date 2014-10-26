@@ -1,0 +1,18 @@
+{
+    "name": "benfuller/s3bomber",
+    "description": "Removes files listed in a mysql table from Amazon S3",
+    "minimum-stability": "stable",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "benfuller",
+            "email": "fuller.ben@gmail.com"
+        }
+    ],
+    "require": {
+        "monolog/monolog": "1.0.*",
+        "aws/aws-sdk-php": "2.7.0",
+        "phpunit/phpunit": "4.3.3"
+    }
+
+}
