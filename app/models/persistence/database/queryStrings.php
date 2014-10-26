@@ -6,7 +6,7 @@
  * Time: 5:02 PM
  */
 
-namespace S3Bomber;
+namespace S3Bomber\models\persistence\database\languageFile;
 
 
 class queryStrings {

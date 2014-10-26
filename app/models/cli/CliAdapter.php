@@ -6,7 +6,7 @@
  * Time: 9:24 PM
  */
 
-namespace S3Bomber;
+namespace S3Bomber\Cli;
 
 /**
  * Class CliAdapter
@@ -19,6 +19,12 @@ class CliAdapter {
     public function __construct($argv){
         $this->argv = $argv;
     }
+
+    /**
+     * @todo add hook for config file path, probably argv[1] if 2, 3, 4 are not found
+     * @todo add hook for start and stop positions
+     * @return mixed
+     */
     public function getArguments(){
         $this->config["mysql_server"]          = $this->argv[1];
         $this->config["mysql_user"]            = $this->argv[2];

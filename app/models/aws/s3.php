@@ -6,7 +6,7 @@
  * Time: 10:56 PM
  */
 
-namespace S3Bomber;
+namespace S3Bomber\Aws;
 use Aws\S3\S3Client;
 
 class s3 extends aws {

@@ -10,7 +10,12 @@
 
 /**
  * You can override CLI variables here
- * 
+ * @todo add commented out override variables
+ * @todo mysql-read support
+ * @todo mysql-test support
+ * @todo phpunit tests
+ * @todo travis-ci integration
+ * @todo phalcon integration
  */
 
 

@@ -6,7 +6,7 @@
  * Time: 10:29 PM
  */
 
-namespace S3Bomber;
+namespace S3Bomber\models\file;
 
 
 class s3bomber_ini extends fileManager{

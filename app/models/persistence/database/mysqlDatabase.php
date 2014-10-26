@@ -6,7 +6,7 @@
  * Time: 4:54 PM
  */
 
-namespace S3Bomber;
+namespace S3Bomber\models\persistence\database;
 
 
 class mysqlDatabase extends database {
