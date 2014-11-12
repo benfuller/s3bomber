@@ -1,26 +1,53 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: Benjamin
- * Date: 10/19/2014
- * Time: 10:29 PM
+ * S3bomber_ini.php app/models/persistence/files/ini/S3bomber_ini.php
+ *
+ * Opens and loads the ini file into our config array
+ *
+ * @category   S3Bomber
+ * @license    MIT License
+ * @version    Release: @package_version@
+ * @link       https://github.com/benfuller/s3bomber
+ * @since      Class available since Release 0.0.1
  */
 
-namespace S3Bomber\models\file;
+/**
+ * Namespace \S3Bomber\models\persistence\file\S3bomber_ini
+ */
+namespace S3Bomber\models\persistence\file;
 
+/**
+ * Ini File to Config Array Class
+ *
+ * Provides functionality to open the ini file and read it into our config array
+ *
+ * @category   S3Bomber
+ * @license    MIT License
+ * @package    S3Bomber\persistence
+ * @subpackage file\S3bomber_ini
+ * @version    Release: @package_version@
+ * @link       https://github.com/benfuller/s3bomber
+ * @since      Class available since Release 0.0.1
+ */
+class S3bomber_ini extends fileManager
+{
 
-class s3bomber_ini extends fileManager{
-    private $config;
-    public function __construct ($fileName="s3bomb-config.ini") {
+    /**
+     *
+     * @var mixed
+     */
+    private $_config;
+    public function __construct ($fileName="s3bomb-config.ini")
+    {
         $iniArray = $this->readIni($fileName);
         foreach ($iniArray as $section => $prm){
             foreach ($prm as $param => $value){
-                $this->config[$section . "_" . $param] = $value;
+                $this->_config[$section . "_" . $param] = $value;
             }
         }
-        $this->config["file_supplied"]=TRUE;
+        $this->_config["file_supplied"]=TRUE;
     }
     public function getConfigFromLoadedIni(){
-        return $this->config;
+        return $this->_config;
     }
 } 
